@@ -1,0 +1,279 @@
+{
+  "name": "delivery-app-photo-specs",
+  "description": "Machine-readable photo requirements for restaurant menu items across delivery marketplaces and restaurant POS platforms. Every figure carries the date it was read off the platform's own documentation and the URL it came from.",
+  "version": "1.0.0",
+  "lastUpdated": "2026-09-22",
+  "license": "CC-BY-4.0",
+  "maintainer": {
+    "name": "MenuPhotoLab",
+    "url": "https://menuphotolab.com"
+  },
+  "methodology": {
+    "rule": "Only figures read directly off the platform's own published documentation appear here. Figures repeated by third parties, including us, are excluded.",
+    "absence": "A field recorded as notPublished means the platform does not publish it. It does not mean the thing does not exist. Platform products sometimes contain behaviour the documentation omits.",
+    "contradictions": "Where a platform's own sources disagree with each other, both values are recorded and the disagreement is stated rather than resolved."
+  },
+  "platforms": [
+    {
+      "id": "doordash",
+      "name": "DoorDash",
+      "type": "delivery_marketplace",
+      "itemPhoto": {
+        "recommendedWidth": 1400,
+        "recommendedHeight": 800,
+        "unit": "px",
+        "aspectRatio": "16:9",
+        "aspectRatioDecimal": 1.778,
+        "orientation": "landscape",
+        "orientationIsExclusive": true,
+        "maxFileSizeMB": 16,
+        "maxFileSizeConflict": {
+          "values": [2, 16],
+          "unit": "MB",
+          "note": "Both figures appear on the same DoorDash page. DoorDash contradicts itself; we do not pick a winner."
+        },
+        "verifiedOn": "2026-08-27",
+        "source": "https://help.doordash.com/en-us/merchants/article/common-photo-issues-explained"
+      },
+      "logo": {
+        "width": 230,
+        "height": 230,
+        "unit": "px",
+        "aspectRatio": "1:1",
+        "maxFileSizeMB": 2,
+        "verifiedOn": "2026-08-27"
+      },
+      "header": {
+        "width": 1400,
+        "height": 800,
+        "unit": "px",
+        "aspectRatioWeb": "4:1",
+        "aspectRatioApp": "16:9",
+        "maxFileSizeMB": 2,
+        "verifiedOn": "2026-08-27",
+        "note": "The same asset is cropped to two different shapes depending on surface."
+      },
+      "rendering": {
+        "thumbnail": "1:1",
+        "detailHeader": "16:9",
+        "note": "A single uploaded file is displayed at two different aspect ratios inside DoorDash itself."
+      },
+      "hands": {
+        "allowed": true,
+        "conditional": true,
+        "wording": "Allowed only if they do not distract from or obscure the item.",
+        "verifiedOn": "2026-08-27"
+      },
+      "review": {
+        "slaPublished": false,
+        "appealPublished": false,
+        "appealExistsInProduct": true,
+        "note": "A Request review control appears on the rejection notice in the merchant portal. It is absent from DoorDash's help centre.",
+        "verifiedOn": "2026-08-30"
+      },
+      "platformAddedPhotos": {
+        "enabled": true,
+        "sources": ["connected Instagram business account", "Yelp"],
+        "optOut": true,
+        "note": "If an item has no photo, DoorDash may supply one. A merchant upload always replaces it.",
+        "verifiedOn": "2026-08-27"
+      }
+    },
+    {
+      "id": "uber-eats",
+      "name": "Uber Eats",
+      "type": "delivery_marketplace",
+      "itemPhoto": {
+        "minWidth": 550,
+        "maxWidth": 10000,
+        "minHeight": 440,
+        "maxHeight": 10000,
+        "unit": "px",
+        "aspectRatioRange": { "min": "5:4", "max": "6:4", "minDecimal": 1.25, "maxDecimal": 1.5 },
+        "aspectRatioIsRecommendation": true,
+        "aspectRatioNote": "Uber marks this line, and only this line, as (recommended). Every other requirement on the page is unqualified.",
+        "fileTypes": ["jpg", "png", "gif"],
+        "maxFileSizeMB": 10,
+        "verifiedOn": "2026-08-30",
+        "source": "https://help.uber.com/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines"
+      },
+      "coverImage": {
+        "width": 2880,
+        "height": 2304,
+        "unit": "px",
+        "aspectRatio": "5:4",
+        "fileTypes": ["jpeg"],
+        "verifiedOn": "2026-08-30"
+      },
+      "hands": { "allowed": true, "wording": "Depict people (except for hands)", "verifiedOn": "2026-08-30" },
+      "framing": {
+        "rule": "Must be framed in the center. Items should not appear at the corners or off frame.",
+        "verifiedOn": "2026-08-30"
+      },
+      "singleItemOnly": {
+        "required": true,
+        "wording": "Contain more than 1 single item is prohibited",
+        "note": "Stricter than it sounds for platters and combination plates.",
+        "verifiedOn": "2026-08-30"
+      },
+      "review": {
+        "slaPublished": true,
+        "slaBusinessDays": 3,
+        "statuses": ["Pending", "Approved", "Rejected"],
+        "appealPublished": false,
+        "appealRoute": "Edit and resubmit",
+        "note": "The only one of these platforms that publishes a review SLA.",
+        "verifiedOn": "2026-08-30"
+      },
+      "customerSubmittedPhotos": {
+        "enabled": true,
+        "merchantOptOutPublished": false,
+        "appearsWithinBusinessDays": [1, 5],
+        "note": "Customers can submit photos of purchased items which may be featured on the restaurant's page. No merchant opt-out is published.",
+        "verifiedOn": "2026-08-30"
+      }
+    },
+    {
+      "id": "grubhub",
+      "name": "Grubhub",
+      "type": "delivery_marketplace",
+      "sourcesDisagree": true,
+      "disagreementNote": "Grubhub publishes two item-photo specifications that contradict each other on minimum size, aspect ratio and file format. Neither page acknowledges the other. Which one binds appears to depend on whether the menu arrives by manual upload or by a POS or integration partner feed.",
+      "itemPhotoHelpCentre": {
+        "minWidth": 200,
+        "minHeight": 200,
+        "unit": "px",
+        "aspectRatio": "1:1",
+        "aspectRatioDecimal": 1.0,
+        "fileTypes": ["png"],
+        "fileTypesNote": "States the file must be saved as a .png.",
+        "verifiedOn": "2026-08-27",
+        "source": "https://get.grubhub.com/help-center/grubhub-menu-overview/"
+      },
+      "itemPhotoDeveloperPortal": {
+        "minWidth": 1600,
+        "minHeight": 1200,
+        "unit": "px",
+        "aspectRatio": "4:3",
+        "aspectRatioDecimal": 1.333,
+        "fileTypes": ["png", "jpeg", "jpg"],
+        "verifiedOn": "2026-08-27",
+        "source": "https://developer.grubhub.com/docs/3zSHFME4nnntcOeqwbOTYl/menu-imagery-specifications",
+        "fetchNote": "This page is a JavaScript single-page app. It returns 'Grubhub is loading...' to curl and to simple fetchers. It must be rendered in a headless browser to read."
+      },
+      "header": { "width": 2400, "height": 1800, "aspectRatio": "4:3", "croppedOnDesktopWebTo": "4:1", "verifiedOn": "2026-08-27" },
+      "profileSearch": { "width": 2400, "height": 1200, "aspectRatio": "2:1", "verifiedOn": "2026-08-27" },
+      "logo": { "width": 200, "height": 200, "fileTypes": ["png", "jpeg", "jpg"], "verifiedOn": "2026-08-27" },
+      "hands": { "allowed": false, "wording": "No body parts, such as hands holding food or people eating.", "verifiedOn": "2026-08-27" },
+      "rendering": { "orderingApp": "square cards" },
+      "review": { "slaPublished": false, "appealPublished": false, "verifiedOn": "2026-08-27" },
+      "observation": "Grubhub's help-centre figure of 200 x 200 square is identical to the developer portal's logo specification. Stated as an observation, not as a claim about Grubhub's intent."
+    },
+    {
+      "id": "toast",
+      "name": "Toast",
+      "type": "pos_and_online_ordering",
+      "typeNote": "Toast is a point of sale with its own online ordering, not a delivery marketplace. Photos surface on the restaurant's own ordering site, POS screens and kiosks. There is no moderation queue and no rejection path.",
+      "sourcesDisagree": true,
+      "itemPhotoMenuManager": {
+        "recommendedWidth": 750,
+        "recommendedHeight": 450,
+        "unit": "px",
+        "aspectRatioDecimal": 1.667,
+        "fileTypes": ["jpg", "png"],
+        "maxFileSizeMB": 5,
+        "croppingNote": "Images may be cropped or zoomed to fit certain POS displays because the POS applies its own aspect-ratio framing. Center the key content so it remains visible after cropping.",
+        "verifiedOn": "2026-09-21",
+        "source": "https://support.toasttab.com/en/article/Adding-Images-to-Menu-Items-in-the-Menu"
+      },
+      "itemPhotoOnlineOrderingPro": {
+        "allowedAspectRatios": ["1:1", "4:3", "16:9"],
+        "allowedAspectRatiosDecimal": [1.0, 1.333, 1.778],
+        "minLongestSide": 1000,
+        "unit": "px",
+        "fileTypesPublished": false,
+        "maxFileSizePublished": false,
+        "verifiedOn": "2026-09-21",
+        "source": "https://support.toasttab.com/en/article/Online-Ordering-Pro-Menu-Image-Requirements"
+      },
+      "internalContradiction": {
+        "summary": "Toast's own recommended 750 x 450 fails Toast's own Online Ordering Pro requirement.",
+        "detail": "750 is the longer side and is 250 px short of the 1000 px minimum. 750 x 450 is also 5:3 (1.667), which is none of the three permitted ratios.",
+        "resolution": "Export 1920 x 1080 (16:9) or 1200 x 1200 (1:1). Either clears both specifications."
+      },
+      "logo": { "minWidth": 230, "minHeight": 230, "maxFileSizeMB": 5, "verifiedOn": "2026-09-21" },
+      "banner": {
+        "minWidth": 1400,
+        "minHeight": 788,
+        "fileTypes": ["jpg", "jpeg", "png"],
+        "maxFileSizeConflict": { "values": [5, 9], "unit": "MB", "note": "Two Toast pages updated one day apart state different caps." },
+        "verifiedOn": "2026-09-21"
+      },
+      "review": { "slaPublished": false, "appealPublished": false, "note": "Scoped to the documentation. The product itself was not checked.", "verifiedOn": "2026-09-21" }
+    },
+    {
+      "id": "square",
+      "name": "Square",
+      "type": "pos_and_online_ordering",
+      "typeNote": "Like Toast, a point of sale with its own online ordering rather than a delivery marketplace.",
+      "itemPhoto": {
+        "recommendedMinWidth": 2000,
+        "recommendedMinHeight": 2000,
+        "unit": "px",
+        "aspectRatio": "1:1",
+        "aspectRatioDecimal": 1.0,
+        "hardMinimumPublished": false,
+        "fileTypes": ["jpg", "jpeg", "png", "gif"],
+        "maxFileSizeMB": 15,
+        "verifiedOn": "2026-09-21",
+        "source": "https://squareup.com/help/us/en/article/6894-product-images-on-square-online-store"
+      },
+      "siteImages": {
+        "nonBackgroundMaxLongestSide": 1000,
+        "backgroundMinWidth": 2000,
+        "backgroundMinHeight": 1000,
+        "unit": "px",
+        "fileTypes": ["jpg", "png", "gif"],
+        "uniqueFilenamesRequired": true,
+        "uniqueFilenamesNote": "Duplicate filenames cause images to swap places or fail to load.",
+        "verifiedOn": "2026-09-21",
+        "source": "https://squareup.com/help/us/en/article/6887-adding-pictures-to-your-square-online-store"
+      },
+      "syncBehaviour": {
+        "syncsAcross": ["point of sale app", "POS devices", "Square Online"],
+        "onePhotoPerItem": true,
+        "wording": "You cannot have different images for the same item across your point of sale app and Square Online.",
+        "verifiedOn": "2026-09-21"
+      },
+      "openQuestion": {
+        "summary": "Square publishes a 2000 px floor for item images and a 1000 px ceiling for site non-background images, and item images sync automatically into Square Online.",
+        "whyUnresolved": "The 1000 px ceiling appears in an article about pictures placed in page sections, which may not govern catalog item photos at all. Square does not state which rule applies to an item photo rendered on the Square Online site.",
+        "status": "Recorded as an open question, deliberately not published as a contradiction."
+      },
+      "review": { "slaPublished": false, "appealPublished": false, "verifiedOn": "2026-09-21" }
+    }
+  ],
+  "crossPlatform": {
+    "aspectRatioConflict": {
+      "summary": "No single file satisfies every platform's item-photo aspect ratio.",
+      "values": [
+        { "platform": "DoorDash", "aspect": "16:9", "decimal": 1.778, "binding": "landscape only" },
+        { "platform": "Uber Eats", "aspect": "5:4 to 6:4", "decimalRange": [1.25, 1.5], "binding": "recommended" },
+        { "platform": "Grubhub (help centre)", "aspect": "1:1", "decimal": 1.0 },
+        { "platform": "Grubhub (developer portal)", "aspect": "4:3", "decimal": 1.333 },
+        { "platform": "Toast (Online Ordering Pro)", "aspect": "1:1, 4:3 or 16:9", "decimals": [1.0, 1.333, 1.778] },
+        { "platform": "Square", "aspect": "1:1", "decimal": 1.0 }
+      ],
+      "observations": [
+        "DoorDash's 16:9 (1.778) falls outside Uber Eats' 1.25 to 1.5 band.",
+        "Grubhub's two contradicting specifications land on opposite sides of Uber Eats' band: 4:3 (1.333) falls inside it, 1:1 (1.0) falls below it.",
+        "Toast's Online Ordering Pro is the only platform here that accepts more than one ratio."
+      ]
+    },
+    "intraPlatformCropConflict": {
+      "summary": "The conflict is not only between platforms. It exists inside a single platform.",
+      "detail": "DoorDash renders menu thumbnails at 1:1 and detail headers at 16:9 from the same uploaded file. Grubhub's ordering app displays square cards. Uber Eats runs landscape. One framing therefore has to survive a square crop and a landscape crop simultaneously.",
+      "implication": "This is a decision made when the photo is taken, not an export setting applied afterwards."
+    }
+  }
+}
