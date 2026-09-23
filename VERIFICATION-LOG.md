@@ -3,7 +3,7 @@
 What was checked, when, where, and what came of it. A figure without a row here should not be
 trusted.
 
-**Next scheduled re-verification: 2026-11-24.**
+**Next scheduled re-verification: 2026-12-22.** Most figures were re-confirmed against the live pages on 2026-09-22; see the rows for that date, including what was NOT re-checked.
 
 | Date | Platform | What was checked | Source | Result |
 |---|---|---|---|---|
@@ -18,7 +18,12 @@ trusted.
 | 2026-09-21 | DoorDash | Source URL check | Merchant learning centre | The learning-centre photo-rejection URL now **301s** to the help-centre article. Links updated to the destination |
 | 2026-09-22 | Uber Eats | Cover image spec, spot-check | [Merchant submitted menu catalog photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines?nodeId=6985355b-0426-4523-94f2-89bb9b0566e9) | **Confirmed unchanged.** The page states "2880 pixel width and 2304 pixel height" and "a JPEG format with a 5:4 aspect ratio", matching the 2026-08-30 reading. The centered-framing rule is also still present |
 | 2026-09-22 | All | Every source URL checked for reachability | The linked pages themselves | All resolve. **Two findings.** Uber's help URLs require their `nodeId` query parameter; the slug alone 404s. Uber also serves 404 to non-browser requests even for valid URLs, so an automated link checker reports false failures on that domain and the links had to be confirmed in a real browser |
-| 2026-09-22 | - | Repository published | - | First public release. All figures carried over with their original verification dates, unchanged |
+| 2026-09-22 | - | Repository published | - | First public release |
+| 2026-09-22 | DoorDash | Full item, logo and header spec set re-read | [Common photo issues explained](https://help.doordash.com/en-us/merchants/article/common-photo-issues-explained) | **All figures confirmed unchanged.** Item 1400 x 800 landscape 16:9, logo 230 x 230 1:1 under 2 MB, header 1400 x 800 at 4:1 web and 16:9 app under 2 MB. Hands wording verbatim. Instagram and Yelp sourcing still described. **The 2 MB vs 16 MB contradiction is real and still live**: the page states "Maximum file size: 2 MB" for item photos in one section and "Under 16 MB" for item photos in another. Checked twice because a first, looser read suggested the 2 MB applied only to logos and headers |
+| 2026-09-22 | Toast | Both item-photo pages re-read | [Menu Manager](https://support.toasttab.com/en/article/Adding-Images-to-Menu-Items-in-the-Menu) and [Online Ordering Pro](https://support.toasttab.com/en/article/Online-Ordering-Pro-Menu-Image-Requirements) | **Contradiction confirmed unchanged.** Menu Manager still recommends 750 x 450, jpg or png, no larger than 5 MB. Online Ordering Pro still requires 1:1, 4:3 or 16:9 and "a minimum height or width of 1000 pixels", and still states neither file type nor size cap |
+| 2026-09-22 | Grubhub | Both specs re-read, developer portal rendered in a browser | [Help centre](https://get.grubhub.com/help-center/grubhub-menu-overview/) and [developer portal](https://developer.grubhub.com/docs/3zSHFME4nnntcOeqwbOTYl/menu-imagery-specifications) | **Contradiction confirmed unchanged.** Help centre: at least 200 x 200, 1:1, "Must be saved as a .png file". Developer portal: at least 1600 x 1200, 4:3, png/jpeg/jpg. **New detail added**: the developer portal states mobile web menus use roughly 4:3 while desktop web uses 4:1. The JS-app warning in this file was also re-validated, a plain fetch again returned only "Grubhub is loading..." |
+| 2026-09-22 | Square | Item image page re-read | [Product images on Square Online](https://squareup.com/help/us/en/article/6894-product-images-on-square-online-store) | **Confirmed unchanged.** "at least 2000 x 2000 pixels with a 1:1 aspect ratio", "Images can be up to 15MB", JPG/JPEG/PNG/GIF, and both sync sentences verbatim |
+| 2026-09-22 | Uber Eats | **Partially re-checked** | [Merchant submitted menu catalog photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines?nodeId=6985355b-0426-4523-94f2-89bb9b0566e9) | Cover image 2880 x 2304 at 5:4 JPEG confirmed live, as was the centered-framing rule. **NOT re-checked: the item width and height ranges (550 to 10,000 and 440 to 10,000), the "(recommended)" qualifier on the aspect band, the 10 MB cap, and the 3 business day review SLA.** Those still carry their 2026-08-30 dates |
 
 ## Known gaps
 

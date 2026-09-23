@@ -42,7 +42,7 @@ We state that as a coincidence we noticed. We are not claiming to know what Grub
 
 | Asset | Size | Aspect | Note |
 |---|---|---|---|
-| Header | 2400 x 1800 px | 4:3 | Desktop web crops it to 4:1 |
+| Header | 2400 x 1800 px | 4:3 | Mobile web uses roughly 4:3; desktop web horizontally crops to 4:1 |
 | Profile / search | 2400 x 1200 px | 2:1 | |
 | Logo | 200 x 200 px | Square artboard | .png, .jpeg, .jpg |
 
@@ -64,7 +64,7 @@ centered, and the image is captured from a distance."
 
 ## Rendering
 
-Grubhub's ordering app displays **square cards**. A 4:3 file submitted to the developer spec
+Grubhub's ordering app displays **square cards**. The developer portal also states that **mobile web menus use roughly a 4:3 ratio while desktop web menus use 4:1**, and that a supplied 4:3 header is horizontally cropped to 4:1 on desktop. A 4:3 file submitted to the developer spec
 will therefore be cropped toward square in the surface customers browse.
 
 ## Review process
