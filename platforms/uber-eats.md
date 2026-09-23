@@ -104,8 +104,12 @@ pages.
 
 ## Sources
 
-- `help.uber.com/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines`
-- `help.uber.com/merchants-and-restaurants/article/store-submitted-menu-photo-guidelines`
-- `help.uber.com/merchants-and-restaurants/article/adding-menu-photos---faq`
-- `help.uber.com/ubereats/restaurants/article/user-submitted-photos-faq`
-- `merchants.ubereats.com/us/en/restaurant-submitted-photos/`
+- [Merchant submitted menu catalog photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines?nodeId=6985355b-0426-4523-94f2-89bb9b0566e9)
+- [Store submitted menu photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/store-submitted-menu-photo-guidelines?nodeId=0ad2da19-95e9-47d0-9db4-d7ddb346c357)
+- [Adding cover images and menu catalog photos](https://help.uber.com/en/merchants-and-restaurants/article/adding-menu-photos---faq?nodeId=b2dfa2b7-20f2-4f5f-81a3-32fa4c2aea89)
+- [User-submitted photos FAQ](https://help.uber.com/en/ubereats/restaurants/article/user-submitted-photos-faq?nodeId=eb8e9ce2-82dc-456b-9d0b-9feb545e6294)
+- [Restaurant menu photography guidelines](https://merchants.ubereats.com/us/en/restaurant-submitted-photos/)
+
+Uber's help URLs need their `nodeId` parameter. The slug on its own returns a 404, and Uber
+serves 404 to non-browser requests even for valid URLs, so an automated link checker will
+report false failures here.

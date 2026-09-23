@@ -16,7 +16,9 @@ trusted.
 | 2026-09-21 | Toast | Item photo specs, brand image specs, review process | Three Toast support articles | **Toast's recommended 750 x 450 fails Toast's own Online Ordering Pro requirement** on both size and shape. Banner file size cap stated as 5 MB on one page and 9 MB on two others, updated one day apart |
 | 2026-09-21 | Square | Item image and site image specs, sync behaviour | Two Square support articles | 2000 x 2000 recommended for items, 15 MB cap. Site non-background images capped at 1000 px on the longest side. **Recorded as an open question, not a contradiction**, because it is unclear the site ceiling governs catalog item photos |
 | 2026-09-21 | DoorDash | Source URL check | Merchant learning centre | The learning-centre photo-rejection URL now **301s** to the help-centre article. Links updated to the destination |
-| 2026-09-22 | - | Repository published | - | First public release. All figures above carried over with their original verification dates, unchanged |
+| 2026-09-22 | Uber Eats | Cover image spec, spot-check | [Merchant submitted menu catalog photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines?nodeId=6985355b-0426-4523-94f2-89bb9b0566e9) | **Confirmed unchanged.** The page states "2880 pixel width and 2304 pixel height" and "a JPEG format with a 5:4 aspect ratio", matching the 2026-08-30 reading. The centered-framing rule is also still present |
+| 2026-09-22 | All | Every source URL checked for reachability | The linked pages themselves | All resolve. **Two findings.** Uber's help URLs require their `nodeId` query parameter; the slug alone 404s. Uber also serves 404 to non-browser requests even for valid URLs, so an automated link checker reports false failures on that domain and the links had to be confirmed in a real browser |
+| 2026-09-22 | - | Repository published | - | First public release. All figures carried over with their original verification dates, unchanged |
 
 ## Known gaps
 

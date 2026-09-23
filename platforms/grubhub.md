@@ -86,6 +86,5 @@ which is how this contradiction went unnoticed for a day on our own first attemp
 
 ## Sources
 
-- `get.grubhub.com/help-center/grubhub-menu-overview/`
-- `developer.grubhub.com/docs/3zSHFME4nnntcOeqwbOTYl/menu-imagery-specifications`
-- `learn.grubhub.com/archives/basics/add-menu-photos`
+- [Grubhub menu overview, help centre](https://get.grubhub.com/help-center/grubhub-menu-overview/)
+- [Menu imagery specifications, developer portal](https://developer.grubhub.com/docs/3zSHFME4nnntcOeqwbOTYl/menu-imagery-specifications)

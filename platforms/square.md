@@ -70,5 +70,5 @@ If you can point at a Square page that settles it, [please open an issue](../../
 
 ## Sources
 
-- `squareup.com/help/us/en/article/6894-product-images-on-square-online-store`
-- `squareup.com/help/us/en/article/6887-adding-pictures-to-your-square-online-store`
+- [Product images on Square Online](https://squareup.com/help/us/en/article/6894-product-images-on-square-online-store)
+- [Adding pictures to your Square Online store](https://squareup.com/help/us/en/article/6887-adding-pictures-to-your-square-online-store)

@@ -100,7 +100,6 @@ a documented absence never establishes that something does not exist.
 
 ## Sources
 
-- `support.toasttab.com/en/article/Adding-Images-to-Menu-Items-in-the-Menu`
-- `support.toasttab.com/en/article/Online-Ordering-Pro-Menu-Image-Requirements`
-- `support.toasttab.com/en/article/Customize-Your-Online-Ordering-Site`
-- `doc.toasttab.com/doc/platformguide/adminAddingImagesToMenuItems.html`
+- [Adding images to menu items](https://support.toasttab.com/en/article/Adding-Images-to-Menu-Items-in-the-Menu)
+- [Online Ordering Pro menu image requirements](https://support.toasttab.com/en/article/Online-Ordering-Pro-Menu-Image-Requirements)
+- [Customize your online ordering site](https://support.toasttab.com/en/article/Customize-Your-Online-Ordering-Site)

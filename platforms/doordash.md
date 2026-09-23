@@ -91,9 +91,8 @@ neither settles the legal position. Read your own contract.
 
 ## Sources
 
-- `help.doordash.com/en-us/merchants/article/common-photo-issues-explained` (the
-  merchant learning-centre photo-rejection URL now 301s here)
-- `help.doordash.com/en-us/merchants/article/photos-terms-glossary`
-- `merchants.doordash.com/en-us/blog/menu-photography`
-- `help.doordash.com/en-us/merchants/article/free-doordash-photoshoots`
+- [Common photo issues explained](https://help.doordash.com/en-us/merchants/article/common-photo-issues-explained) (the merchant learning-centre photo-rejection URL now 301s here)
+- [Photos terms glossary](https://help.doordash.com/en-us/merchants/article/photos-terms-glossary)
+- [Menu photography, merchant blog](https://merchants.doordash.com/en-us/blog/menu-photography)
+- [Free DoorDash photoshoots](https://help.doordash.com/en-us/merchants/article/free-doordash-photoshoots)
 - DoorDash Merchant Portal, Menu Manager (in-product, 2026-08-30)

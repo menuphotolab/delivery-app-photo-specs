@@ -97,6 +97,42 @@ Google Business Profile and Instagram are deliberately absent. We hold figures f
 they have not been verified against the platforms, and unverified numbers do not belong in a
 reference. ChowNow, Slice and Caviar have not been researched at all.
 
+## Official sources
+
+Every figure in this repository comes from one of these pages. They are linked so you can
+check any claim yourself, which is the point of a reference.
+
+**DoorDash**
+- [Common photo issues explained](https://help.doordash.com/en-us/merchants/article/common-photo-issues-explained) (the merchant learning-centre photo-rejection URL now redirects here)
+- [Photos terms glossary](https://help.doordash.com/en-us/merchants/article/photos-terms-glossary)
+- [Menu photography (merchant blog)](https://merchants.doordash.com/en-us/blog/menu-photography)
+- [Free DoorDash photoshoots](https://help.doordash.com/en-us/merchants/article/free-doordash-photoshoots)
+
+**Uber Eats**
+- [Merchant submitted menu catalog photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines?nodeId=6985355b-0426-4523-94f2-89bb9b0566e9)
+- [Store submitted menu photo guidelines](https://help.uber.com/en/merchants-and-restaurants/article/store-submitted-menu-photo-guidelines?nodeId=0ad2da19-95e9-47d0-9db4-d7ddb346c357)
+- [Adding cover images and menu catalog photos](https://help.uber.com/en/merchants-and-restaurants/article/adding-menu-photos---faq?nodeId=b2dfa2b7-20f2-4f5f-81a3-32fa4c2aea89)
+- [User-submitted photos FAQ](https://help.uber.com/en/ubereats/restaurants/article/user-submitted-photos-faq?nodeId=eb8e9ce2-82dc-456b-9d0b-9feb545e6294)
+- [Restaurant menu photography guidelines](https://merchants.ubereats.com/us/en/restaurant-submitted-photos/)
+
+**Grubhub**
+- [Grubhub menu overview (help centre)](https://get.grubhub.com/help-center/grubhub-menu-overview/)
+- [Menu imagery specifications (developer portal)](https://developer.grubhub.com/docs/3zSHFME4nnntcOeqwbOTYl/menu-imagery-specifications)
+
+**Toast**
+- [Adding images to menu items](https://support.toasttab.com/en/article/Adding-Images-to-Menu-Items-in-the-Menu)
+- [Online Ordering Pro menu image requirements](https://support.toasttab.com/en/article/Online-Ordering-Pro-Menu-Image-Requirements)
+- [Customize your online ordering site](https://support.toasttab.com/en/article/Customize-Your-Online-Ordering-Site)
+
+**Square**
+- [Product images on Square Online](https://squareup.com/help/us/en/article/6894-product-images-on-square-online-store)
+- [Adding pictures to your Square Online store](https://squareup.com/help/us/en/article/6887-adding-pictures-to-your-square-online-store)
+
+Two notes on these links, learned by checking them. **DoorDash moves its URLs**: the
+learning-centre path already redirected once. **Uber Eats help URLs require their `nodeId`
+parameter**; the slug alone returns a 404, and Uber serves 404 to non-browser requests even
+for valid URLs, so an automated link checker will report false failures on that domain.
+
 ## Corrections
 
 If a platform has changed a spec, or one of these is wrong, please
@@ -105,6 +141,12 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 
-[CC BY 4.0](./LICENSE). Use it, quote it, build on it. Attribution appreciated.
+[CC BY 4.0](./LICENSE).
+
+**The figures themselves are facts and are free to use without attribution.** They describe
+how someone else's product behaves and are not ours to license. What CC BY covers is the
+written analysis, the compilation, and the structured representation in `specs.json`. See
+[NOTICE.md](./NOTICE.md) for the full breakdown, including the quoted platform wording,
+which belongs to the platforms.
 
 Maintained by [MenuPhotoLab](https://menuphotolab.com).
