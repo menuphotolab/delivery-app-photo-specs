@@ -49,6 +49,12 @@ decision made when the photo is taken, not an export setting applied afterwards.
 
 Uber Eats is the only platform here that publishes a **maximum** resolution.
 
+If you want to test a file against the table above rather than read it off by hand,
+there is a free browser-based checker at
+[menuphotolab.com/tools/rejection-checker](https://menuphotolab.com/tools/rejection-checker).
+No signup, and the file is never uploaded: it is measured in the page. It checks size,
+shape, format and file size only, not the content rules further down this page.
+
 ## Where platforms contradict themselves
 
 These are the parts no one else writes down, so they get their own section:
