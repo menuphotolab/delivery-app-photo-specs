@@ -40,7 +40,7 @@ decision made when the photo is taken, not an export setting applied afterwards.
 | Platform | Minimum / recommended | Aspect | Formats | Max size | Verified |
 |---|---|---|---|---|---|
 | DoorDash | 1400 x 800 px | 16:9, landscape only | | 16 MB (see note) | 2026-09-22 |
-| Uber Eats | 550 to 10,000 px wide, 440 to 10,000 px high | 5:4 to 6:4 (recommended) | jpg, png, gif | 10 MB | 2026-08-30 |
+| Uber Eats | 550 to 10,000 px wide, 440 to 10,000 px high | 5:4 to 6:4 (recommended) | jpg, png, gif | 10 MB | 2026-09-22 |
 | Grubhub (help centre) | 200 x 200 px | 1:1 | png only | not stated | 2026-09-22 |
 | Grubhub (developer portal) | 1600 x 1200 px | 4:3 | png, jpeg, jpg | not stated | 2026-09-22 |
 | Toast (Menu Manager) | 750 x 450 px | 5:3 | jpg, png | 5 MB | 2026-09-22 |
@@ -70,9 +70,10 @@ These are the parts no one else writes down, so they get their own section:
 | | DoorDash | Uber Eats | Grubhub |
 |---|---|---|---|
 | **Hands in frame** | Allowed, if they do not obscure the item | Allowed | **Prohibited** |
-| **Review SLA published** | No | Yes, up to 3 business days | No |
+| **Review SLA published** | No | Yes, up to 3 business days (stated for cover images) | No |
 | **Appeal published** | No | No | No |
 | **Platform adds its own photos** | Yes, from a connected Instagram account or Yelp | Customer-submitted photos, no published merchant opt-out | Not published |
+| **Platform edits your photo** | Not published | **Yes**, size, orientation, lighting and colour, after approval | Not published |
 
 Three platforms, three different answers on hands alone.
 

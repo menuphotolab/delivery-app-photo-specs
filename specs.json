@@ -91,10 +91,11 @@
         "unit": "px",
         "aspectRatioRange": { "min": "5:4", "max": "6:4", "minDecimal": 1.25, "maxDecimal": 1.5 },
         "aspectRatioIsRecommendation": true,
-        "aspectRatioNote": "Uber marks this line, and only this line, as (recommended). Every other requirement on the page is unqualified.",
+        "aspectRatioNote": "In a list where every other line is a flat requirement, this is the only one softened to a recommendation.",
         "fileTypes": ["jpg", "png", "gif"],
         "maxFileSizeMB": 10,
-        "verifiedOn": "2026-08-30",
+        "maxFileSizeNote": "5 MB for Creative Hub in Uber Marketing Manager, a different surface.",
+        "verifiedOn": "2026-09-22",
         "source": "https://help.uber.com/en/merchants-and-restaurants/article/merchant-submitted-menu-catalog-photo-guidelines?nodeId=6985355b-0426-4523-94f2-89bb9b0566e9"
       },
       "coverImage": {
@@ -103,9 +104,10 @@
         "unit": "px",
         "aspectRatio": "5:4",
         "fileTypes": ["jpeg"],
-        "verifiedOn": "2026-08-30"
+        "framing": "centered, leveled, and properly cropped",
+        "verifiedOn": "2026-09-22"
       },
-      "hands": { "allowed": true, "wording": "Depict people (except for hands)", "verifiedOn": "2026-08-30" },
+      "hands": { "allowed": true, "wording": "Depict people (except for hands)", "verifiedOn": "2026-09-22" },
       "framing": {
         "rule": "Must be framed in the center. Items should not appear at the corners or off frame.",
         "verifiedOn": "2026-08-30"
@@ -119,11 +121,25 @@
       "review": {
         "slaPublished": true,
         "slaBusinessDays": 3,
+        "slaAppliesTo": "cover images",
+        "slaScopeNote": "Uber states the 3 business day figure in the section about cover images. It publishes no equivalent SLA for item photos. Still the only published review timeframe of any platform here, but narrower than a general claim.",
         "statuses": ["Pending", "Approved", "Rejected"],
         "appealPublished": false,
         "appealRoute": "Edit and resubmit",
-        "note": "The only one of these platforms that publishes a review SLA.",
-        "verifiedOn": "2026-08-30"
+        "withdrawPending": true,
+        "withdrawRoute": "Menu Maker, Cancel photo update, Withdraw",
+        "verifiedOn": "2026-09-22"
+      },
+      "platformMayEditYourPhoto": {
+        "afterApproval": true,
+        "wording": "Once approved, we may edit the size, orientation, lighting, and/or color of your photos",
+        "note": "Uber also answers the question 'Why was the photo I submitted edited?' with 'The photo you submitted may have been edited to fit our photo guidelines.' The image a customer sees is not guaranteed to be the uploaded file.",
+        "verifiedOn": "2026-09-22"
+      },
+      "rightsGrantedOnUpload": {
+        "wording": "By uploading photos, you (1) represent and warrant that you have usage rights and don't violate any third party rights; (2) sub-license the right to such photos to Uber, including the right to modify photos without permission; and (3) release Uber from liability relating to such photos.",
+        "note": "Clause 2 is what permits the post-approval editing described above.",
+        "verifiedOn": "2026-09-22"
       },
       "customerSubmittedPhotos": {
         "enabled": true,
