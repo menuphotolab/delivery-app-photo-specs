@@ -63,8 +63,9 @@ These are the parts no one else writes down, so they get their own section:
 1. **DoorDash states two file size caps on the same page**, 2 MB and 16 MB.
 2. **Grubhub publishes two complete item specs that disagree on every field**, and neither
    page acknowledges the other.
-3. **Toast's recommended 750 x 450 fails Toast's own Online Ordering Pro requirement.** It is
-   250 px short of the 1000 px floor and its 5:3 shape is none of the three permitted ratios.
+3. **Toast's recommended 750 x 450 collides with Toast's own Online Ordering Pro guidance.**
+   It is 250 px short of the 1000 px Toast recommends elsewhere, and its 5:3 shape is none of
+   the three ratios Online Ordering Pro says its templates support.
 4. **Toast states two different banner file size caps** on pages updated one day apart.
 5. **Square** publishes a 2000 px floor for item images and a 1000 px ceiling for site
    images, and item images sync automatically into the online store. Recorded as an open

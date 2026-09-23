@@ -9,12 +9,12 @@ the rejection language that applies to DoorDash and Uber Eats does not transfer 
 
 ## The contradiction, first
 
-**Toast's own recommended size fails Toast's own requirement.**
+**Toast's own recommended size collides with Toast's own guidance.**
 
 | | |
 |---|---|
 | Menu Manager recommends | "a rectangle 750 px by 450 px" |
-| Online Ordering Pro requires | "a minimum height or width of 1000 pixels", and one of 1:1, 4:3 or 16:9 |
+| Online Ordering Pro recommends | "a minimum height or width of 1000 pixels", and says its templates "support" 1:1, 4:3 and 16:9 |
 
 750 x 450 fails on both counts:
 

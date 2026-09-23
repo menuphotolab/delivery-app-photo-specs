@@ -56,21 +56,28 @@ like it succeeded and tells you nothing. It has to be rendered in a headless bro
 
 ---
 
-## 3. Toast's recommended size fails Toast's own requirement
+## 3. Toast's recommended size collides with Toast's own guidance
 
 | | |
 |---|---|
 | **Toast Menu Manager recommends** | "a rectangle 750 px by 450 px" |
-| **Toast Online Ordering Pro requires** | "a minimum height or width of 1000 pixels" and one of 1:1, 4:3 or 16:9 |
-| **Verified** | 2026-09-21, both pages |
+| **Toast Online Ordering Pro recommends** | "a minimum height or width of 1000 pixels", and says its templates "support" 1:1, 4:3 and 16:9 |
+| **Verified** | 2026-09-21, re-read verbatim 2026-09-22 |
 
 750 x 450 fails on two counts at once:
 
 - **Size.** 750 is its longest side, 250 px short of the 1000 px floor.
 - **Shape.** 750 x 450 is 5:3 (1.667), which is none of 1:1 (1.0), 4:3 (1.333) or 16:9 (1.778).
 
-A restaurant that follows Toast's recommendation exactly produces a file Toast's own Online
-Ordering Pro rejects on both dimensions.
+A restaurant that follows Toast's recommendation exactly produces a file that falls outside
+Toast's own Online Ordering Pro guidance on both counts.
+
+**Corrected 2026-09-22.** This entry previously said Online Ordering Pro "requires" 1000 px
+and that the file is "rejected". Both overstated the source. Toast's live wording is "we
+recommend a minimum height or width of 1000 pixels", so this is a recommendation colliding
+with a recommendation, not a rule you can be rejected against. The shape half is the firmer
+of the two, because "support" is the verb Toast uses for the three accepted ratios. The
+conflict is real either way; it simply bites less hard than stated.
 
 **Resolution:** export **1920 x 1080** (16:9) or **1200 x 1200** (1:1). Either clears both
 specifications with room to spare.
